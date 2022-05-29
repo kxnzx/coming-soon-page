@@ -1,0 +1,245 @@
+// GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+// VARIABLES
+// Colors
+// primary colors
+$blue: hsl(223, 87%, 63%);
+// secondary color
+$pale_blue: hsl(223, 100%, 88%);
+$light_red: hsl(354, 100%, 66%);
+// neutral colors
+$gray: hsl(0, 0%, 59%);
+$very_dark_blue: hsl(209, 33%, 12%);
+// Typography
+// font-family
+$ff: "Libre Franklin", sans-serif;
+// font-weight
+$fw_light: 300;
+$fw_semi_bold: 600;
+$fw_bold: 700;
+// font-size
+$fs: 1.25rem;
+// Breakpoints
+$mobile: 640px;
+$tablet: 768px;
+$xl_tablet: 960px;
+$desktop: 1024px;
+// RESET
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+// STYLES (Mobile First)
+body {
+  display: grid;
+  place-items: center;
+  font-family: $ff;
+  .container {
+    display: grid;
+    place-items: center;
+    max-width: 20rem;
+    @media screen and (min-width: $desktop) {
+      max-width: 40rem;
+    }
+  }
+}
+
+main {
+  position: relative;
+}
+
+header {
+  text-align: center;
+  .header-logo {
+    display: block;
+    width: 3.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5rem;
+    @media screen and (min-width: $desktop) {
+      width: 5.625rem;
+    }
+  }
+  h1 {
+    font-weight: $fw_light;
+    font-size: 1.5rem;
+    color: $gray;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $desktop) {
+      font-size: 3rem;
+    }
+  }
+  .bold {
+    font-weight: $fw_bold;
+    color: $very_dark_blue;
+  }
+  p {
+    color: $very_dark_blue;
+    font-size: 0.795rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: $desktop) {
+      font-size: 1.25rem;
+    }
+  }
+}
+form {
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+  }
+}
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 17.875rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4.575rem;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    width: 40rem;
+    justify-content: center;
+  }
+  .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.063rem;
+  }
+  .desktop {
+    @media screen and (min-width: $desktop) {
+      width: 27.813rem;
+      margin-right: 1.25rem;
+    }
+  }
+
+  input,
+  button {
+    border-radius: 30px;
+    padding: 0.625rem;
+    width: 17.875;
+    max-width: 100%;
+    @media screen and (min-width: $desktop) {
+      padding: 0.775rem;
+    }
+  }
+  input {
+    color: $pale_blue;
+    border: 1px solid $pale_blue;
+    padding-left: 2rem;
+    outline: none;
+    width: 17.875rem;
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
+  }
+  input::placeholder {
+    color: $gray;
+    opacity: 0.3;
+  }
+  input.error {
+    border-color: $light_red;
+  }
+  input.error::placeholder {
+    color: $light_red;
+  }
+
+  .error_message {
+    color: $light_red;
+    font-size: 0.625rem;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    display: none;
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      width: 23.125rem;
+      margin-left: -0.5rem;
+    }
+  }
+
+  button {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: white;
+    background-color: $blue;
+    border: 1px solid $blue;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-shrink: 0;
+      align-self: baseline;
+      width: 10rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.dashboard {
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 1.425rem;
+  a {
+    border: 1px solid $pale_blue;
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+      color: white;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: $gray;
+  .copyright {
+    font-size: 0.625rem;
+  }
+  .attribution a {
+    color: $blue;
+  }
+}
