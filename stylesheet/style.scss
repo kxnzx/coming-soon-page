@@ -62,10 +62,6 @@ body {
   }
 }
 
-main {
-  position: relative;
-}
-
 header {
   text-align: center;
   .header-logo {
@@ -232,8 +228,6 @@ fieldset {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   text-align: center;
   color: $gray;
   .copyright {

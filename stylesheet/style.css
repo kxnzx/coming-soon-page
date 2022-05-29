@@ -38,10 +38,6 @@ body .container {
   }
 }
 
-main {
-  position: relative;
-}
-
 header {
   text-align: center;
 }
@@ -237,8 +233,6 @@ fieldset button:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   text-align: center;
   color: hsl(0deg, 0%, 59%);
 }
