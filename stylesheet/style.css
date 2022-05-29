@@ -80,10 +80,6 @@ header p {
   }
 }
 
-main {
-  position: relative;
-}
-
 @media screen and (min-width: 1024px) {
   form {
     justify-content: center;
