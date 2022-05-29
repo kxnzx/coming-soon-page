@@ -58,6 +58,7 @@ body {
     max-width: 20rem;
     @media screen and (min-width: $desktop) {
       max-width: 40rem;
+      margin-top: 5%;
     }
   }
 }
@@ -95,6 +96,9 @@ header {
       font-size: 1.25rem;
     }
   }
+}
+main {
+  position: relative;
 }
 form {
   @media screen and (min-width: $desktop) {
@@ -138,7 +142,7 @@ fieldset {
     width: 17.875;
     max-width: 100%;
     @media screen and (min-width: $desktop) {
-      padding: 0.775rem;
+      padding: 1rem;
     }
   }
   input {
@@ -228,6 +232,9 @@ fieldset {
 }
 
 footer {
+  //position: absolute;
+  //bottom: 0;
+  margin-top: 5%;
   text-align: center;
   color: $gray;
   .copyright {

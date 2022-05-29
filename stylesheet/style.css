@@ -35,6 +35,7 @@ body .container {
 @media screen and (min-width: 1024px) {
   body .container {
     max-width: 40rem;
+    margin-top: 5%;
   }
 }
 
@@ -77,6 +78,10 @@ header p {
   header p {
     font-size: 1.25rem;
   }
+}
+
+main {
+  position: relative;
 }
 
 @media screen and (min-width: 1024px) {
@@ -127,7 +132,7 @@ fieldset button {
 @media screen and (min-width: 1024px) {
   fieldset input,
 fieldset button {
-    padding: 0.775rem;
+    padding: 1rem;
   }
 }
 fieldset input {
@@ -233,6 +238,7 @@ fieldset button:hover {
 }
 
 footer {
+  margin-top: 5%;
   text-align: center;
   color: hsl(0deg, 0%, 59%);
 }
