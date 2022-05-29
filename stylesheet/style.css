@@ -35,7 +35,7 @@ body .container {
 @media screen and (min-width: 1024px) {
   body .container {
     max-width: 40rem;
-    margin-top: 5%;
+    margin-top: 10%;
   }
 }
 
@@ -238,7 +238,7 @@ fieldset button:hover {
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
   color: hsl(0deg, 0%, 59%);
 }
