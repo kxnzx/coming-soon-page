@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- View my Solution on [Frontend Mentor](https://your-solution-url.com)
-- View the Live Site [here](https://your-live-site-url.com)
+- View my Solution on [Frontend Mentor](https://www.frontendmentor.io/solutions/email-validation-form-with-vanilla-html-css-and-javascript-5diVRcbR_u)
+- View the Live Site [here](https://kxnzx.github.io/coming-soon-page/)
 
 ## My process
 
