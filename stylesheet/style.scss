@@ -97,9 +97,7 @@ header {
     }
   }
 }
-main {
-  //position: relative;
-}
+
 form {
   @media screen and (min-width: $desktop) {
     justify-content: center;
@@ -232,8 +230,6 @@ fieldset {
 }
 
 footer {
-  //position: absolute;
-  //bottom: 0;
   margin-top: 8%;
   text-align: center;
   color: $gray;
